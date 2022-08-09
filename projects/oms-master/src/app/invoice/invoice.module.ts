@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { InvoiceComponent } from './invoice.component';
 
+import { InvoiceRoutingModule } from './invoice-routing.module';
+import { InvoiceComponent } from './invoice.component';
 
 
 @NgModule({
@@ -9,7 +10,8 @@ import { InvoiceComponent } from './invoice.component';
     InvoiceComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    InvoiceRoutingModule
   ]
 })
 export class InvoiceModule { }

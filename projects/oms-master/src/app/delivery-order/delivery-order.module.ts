@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DeliveryOrderComponent } from './delivery-order.component';
 
+import { DeliveryOrderRoutingModule } from './delivery-order-routing.module';
+import { DeliveryOrderComponent } from './delivery-order.component';
 
 
 @NgModule({
@@ -9,7 +10,8 @@ import { DeliveryOrderComponent } from './delivery-order.component';
     DeliveryOrderComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    DeliveryOrderRoutingModule
   ]
 })
 export class DeliveryOrderModule { }
